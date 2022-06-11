@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Notepad</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="note_title_hint">Новая заметка</string>
+    <string name="note_title_lable">Заголовок</string>
+    <string name="note_description_label">Описание</string>
+    <string name="note_date_choose">Выбрать дату</string>
+
+
 </resources>
