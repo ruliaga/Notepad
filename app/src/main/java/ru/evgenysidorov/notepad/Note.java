@@ -20,11 +20,14 @@ public class Note {
         this.nDescription = nDescription;
     }
 
-    public Note(String nTitle){
+    public Note(String nTitle, String nDescription){
         nId = UUID.randomUUID();
         this.nTitle=nTitle;
+        this.nDescription=nDescription;
         nDate= new Date();
     }
+
+
 
     public Date getnDate() {
         return nDate;

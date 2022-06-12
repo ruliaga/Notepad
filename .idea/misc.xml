@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rulia/AndroidStudioProjects/Notepad/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/rulia/AndroidStudioProjects/Notepad/app/src/main/res/layout/activity_main.xml" value="0.2484375" />
         <entry key="..\:/Users/rulia/AndroidStudioProjects/Notepad/app/src/main/res/layout/fragment_note.xml" value="0.1" />
         <entry key="..\:/Users/rulia/AndroidStudioProjects/Notepad/app/src/main/res/layout/fragment_note_description.xml" value="0.2526041666666667" />
