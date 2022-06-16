@@ -1,5 +1,6 @@
 package ru.evgenysidorov.notepad;
 
+import android.annotation.SuppressLint;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -68,6 +69,7 @@ public class NoteFragment extends Fragment {
         }
 
     }
+    @SuppressLint("ResourceAsColor")
     public void initList(View view){
         LinearLayout linearLayout = (LinearLayout) view;
 
@@ -80,6 +82,7 @@ public class NoteFragment extends Fragment {
           TextView tv= new TextView(getContext());
           tv.setText(note.getnTitle().toString());
           tv.setTextSize(30);
+          tv.setTextColor(R.color.black);
           linearLayout.addView(tv);
           final int position = i;
           tv.setOnClickListener(v->{
