@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,20 +20,29 @@ public class NoteDescriptionFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(savedInstanceState!=null){
-            requireActivity().getSupportFragmentManager().popBackStack();
-        }
+
+
+
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        return inflater.inflate(R.layout.fragment_note_description,container,false);
+
+
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Button deleteButton = requireActivity().findViewById(R.id.deleteButton);
+        deleteButton.setOnClickListener(v -> {
+            Toast.makeText(getContext(),"Заметка удалена",Toast.LENGTH_SHORT).show();
+        });
+        if(savedInstanceState!=null){
+            requireActivity().getSupportFragmentManager().popBackStack();
+        }
         Note [] notes=new Note [3];
         notes [0]=new Note("Встреча в субботу","На набережной в 18.00, встреча однокурсников");
         notes [1]=new Note("Купить вечером","Хлеб и молоко");
