@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                         openAboutFragment();
                         return true;
                     case R.id.exit_drawer:
-                            finish();
+                        new MyDialogFragment().show(getSupportFragmentManager(),MyDialogFragment.TAG);
                             return true;
                 } return false;
             }
